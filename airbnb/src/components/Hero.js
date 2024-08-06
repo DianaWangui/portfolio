@@ -8,7 +8,7 @@ export default function Hero() {
         <h2 className='hero-header2'>A Software Engineer 💻</h2>
         <h2 className='hero-header2'>Welcome to my Portfolio</h2>
         <div className='hero-btn'>
-          <button className="button">View Project</button>
+        <a href="#project-details" className="button">View Project</a>
         </div>
       </div>
       <div className='animation-container'>

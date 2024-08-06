@@ -108,6 +108,10 @@
     height: auto;
     cursor: pointer;
 }
+.hero-btn a {
+    text-decoration: none;
+}
+
 .hero-btn .button:hover {
     background-color: rgb(22, 75, 49);
     color: white;
@@ -168,6 +172,7 @@
     margin-right: 200px;
 }
 
+
 .image img {
     width: 125%;
     height: 125%;
@@ -180,6 +185,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
+    width: auto;
     margin-left: 200px;
     margin-right: 200px;
     padding: 100px 0px;
@@ -197,18 +203,25 @@
 .about-page .about-card {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
     border: 1px solid rgba(188, 207, 238, 0.5);
-    margin: 0px 15px;
-    padding: 10px 30px;
-    height: 250px ;
-    width: 300px;
+    height: auto;
+    width: auto;
     background-color:rgba(188, 207, 238, 0.5);
     box-shadow: -3px -3px 18px 0px rgba(0,0,0,0.10);
-    border-radius: 5px;
     color: black;
+    flex: 1 1 calc(25% -20px);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-body p {
+    color: grey;
+    line-height: 2rem;
 }
 
 .number {
@@ -217,8 +230,114 @@
     padding: 5px;
 }
 
+/* More about me */
+.about-me {
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
 
+.aboutme-header {
+    font-size: 1.5rem;
+    margin-right: 50px;
+    width: auto;
+    height: auto;
+}
 
+.aboutme-header h2 {
+    width: 200px;
+}
+
+.about-me .more-info {
+    width: 100vw;
+    margin-left: 200px;
+    color: grey;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #00bf63;
+    height: 300px;
+    width: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 1.1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 5px;
+
+}
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.footer-content p {
+    font-size: 1.2rem;
+    width: 400px;
+
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-socials h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-socials ul, .footer-contact ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+.footer-socials ul li {
+    padding-bottom: 5px;
+}
+
+.footer-socials ul a {
+    text-decoration: none;
+    color: black;
+}
+.footer-socials ul a:hover {
+    text-decoration: underline;
+    color: blue;
+
+}
 
 /* Projects */
 .project {

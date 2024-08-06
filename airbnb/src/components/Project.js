@@ -10,7 +10,7 @@ import Image8 from '../images/image8.jpg'
 
 export default function Project() {
   return (
-    <section className='project'> 
+    <section className='project' id="project-details"> 
       <h2 className='project-header'>Projects</h2>
       <div className='project-info'>
         <div className='project-card card card1'>
